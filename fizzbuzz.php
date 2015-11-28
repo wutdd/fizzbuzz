@@ -3,13 +3,16 @@
 class FizzBuzz
 {
 	public static function recieve($num){
-		if($num == 15)
+
+		if($num%3==0 && $num%5==0)
 			return "FizzBuzz";
+
+		if($num % 3 == 0)
+			return "Fizz";
+		
 		if($num == 5)
 			return "Buzz";
-		if($num != 1)
-			return "Fizz";
 		else
-			return 1;
+			return $num;
 	}
 }
