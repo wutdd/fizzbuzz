@@ -20,4 +20,11 @@ class FizzBuzzTest  extends PHPUnit_Framework_TestCase
 		$result = FizzBuzz::recieve(5);
 		$this->assertEquals($expected,$result);
 	}
+	public function testEnter15ReturnFizzBuzz()
+	{
+		$expected = "FizzBuzz";
+		$result = FizzBuzz::recieve(15);
+		$this->assertEquals($expected,$result);
+	}
+
 }
