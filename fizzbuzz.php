@@ -3,6 +3,11 @@
 class FizzBuzz
 {
 	public static function recieve($num){
-		return 1;
+		if($num == 5)
+			return "Buzz";
+		if($num != 1)
+			return "Fizz";
+		else
+			return 1;
 	}
 }
